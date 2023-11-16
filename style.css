@@ -67,6 +67,7 @@ main > div > button {
   background-color: white;
   border-radius: 20rem;
   color: hsl(31, 77%, 52%);
+  border: 1px solid white;
 }
 
 main > div > button:hover {

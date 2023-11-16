@@ -1,0 +1,128 @@
+/* Css reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* colors */
+
+.color {
+  color: hsl(31, 77%, 52%);
+  color: hsl(184, 100%, 22%);
+  color: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+  color: hsl(0, 0%, 95%);
+}
+
+/* typography */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+body {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  height: 165vh;
+  padding-top: 5rem;
+}
+
+main {
+  width: 18rem;
+  border-radius: 10px;
+}
+
+main > .first,
+main > .second,
+main > .third {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2.5rem;
+  border-radius: 10px 10px 0 0;
+}
+
+main > div > img {
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+
+main > div > h2 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+main > div > p {
+  font-size: 15px;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+main > div > button {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 20rem;
+  color: hsl(31, 77%, 52%);
+}
+
+main > div > button:hover {
+  background-color: inherit;
+  color: white;
+}
+
+main > .second {
+  border-radius: 0 0 0 0;
+  background-color: hsl(184, 100%, 22%);
+}
+
+main > .second > button {
+  color: hsl(184, 100%, 22%);
+}
+
+main > .third {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 10px 10px;
+}
+
+main > .third > button {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 1000px) {
+  body {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  main {
+    display: flex;
+    width: 50vw;
+  }
+  main > .first,
+  main > .second,
+  main > .third {
+    border-radius: 0 0 0 0;
+  }
+
+  main > .first {
+    border-radius: 10px 0 0 10px;
+  }
+
+  main > .third {
+    border-radius: 0 10px 10px 0;
+  }
+
+  main > div > p {
+    margin-bottom: 4rem;
+  }
+
+  main > .third > p {
+    margin-bottom: 2.3rem;
+  }
+}
